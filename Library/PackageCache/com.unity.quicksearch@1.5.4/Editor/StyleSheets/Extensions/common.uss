@@ -1,0 +1,30 @@
+
+.quick-search-item-background1 {
+    -unity-enable-hovering: --enable-style-hovering;
+}
+
+.quick-search-item-background2 {
+    -unity-enable-hovering: --enable-style-hovering;
+
+    background-color: --theme-background-color-alternate;
+}
+
+.quick-search-item-background1:hover,
+.quick-search-item-background2:hover {
+    background-color: --theme-line-selection-background-color-hover;
+}
+
+.quick-search-item-selected-background {
+    -unity-enable-hovering: --enable-style-hovering;
+
+    background-color: --theme-line-selection-background-color-focus;
+}
+
+.quick-search-item-selected-background:hover {
+    background-color: --theme-line-selection-background-color-focus;
+}
+
+.quick-search-border,
+.quick-search-filter-panel-border, .quick-search-preview-panel-border {
+    border: --theme-window-border;
+}

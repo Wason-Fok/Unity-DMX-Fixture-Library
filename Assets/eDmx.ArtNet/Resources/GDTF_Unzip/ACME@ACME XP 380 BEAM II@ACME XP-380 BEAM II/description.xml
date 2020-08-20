@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<GDTF DataVersion="1.0">
+
+  <FixtureType Description="ACME XP-380 BEAM II 380W" FixtureTypeID="0D5D83FD-6B1E-4FF3-AD55-88912DDB2215" LongName="ACME XP 380 BEAM II" Manufacturer="ACME" Name="ACME XP 380 BEAM II" RefFT="8F54E11C-4C91-11E9-80BC-F1DFE217E634" ShortName="XP 380 BEAM II" Thumbnail="XP-380 BEAM II">
+    <AttributeDefinitions>
+      <ActivationGroups>
+        <ActivationGroup Name="PanTilt"/>
+        <ActivationGroup Name="Gobo1"/>
+        <ActivationGroup Name="Prism"/>
+        <ActivationGroup Name="ColorRGB"/>
+      </ActivationGroups>
+      <FeatureGroups>
+        <FeatureGroup Name="Position" Pretty="Position">
+          <Feature Name="PanTilt"/>
+        </FeatureGroup>
+        <FeatureGroup Name="Gobo" Pretty="Gobo">
+          <Feature Name="Gobo"/>
+        </FeatureGroup>
+        <FeatureGroup Name="Beam" Pretty="Beam">
+          <Feature Name="Beam"/>
+        </FeatureGroup>
+        <FeatureGroup Name="Focus" Pretty="Focus">
+          <Feature Name="Focus"/>
+        </FeatureGroup>
+        <FeatureGroup Name="Dimmer" Pretty="Dimmer">
+          <Feature Name="Dimmer"/>
+        </FeatureGroup>
+        <FeatureGroup Name="Control" Pretty="Control">
+          <Feature Name="Control"/>
+        </FeatureGroup>
+        <FeatureGroup Name="Color" Pretty="Color">
+          <Feature Name="Color"/>
+        </FeatureGroup>
+      </FeatureGroups>
+      <Attributes>
+        <Attribute ActivationGroup="PanTilt" Feature="Position.PanTilt" Name="Pan" PhysicalUnit="Angle" Pretty="P"/>
+        <Attribute ActivationGroup="PanTilt" Feature="Position.PanTilt" Name="Tilt" PhysicalUnit="Angle" Pretty="T"/>
+        <Attribute ActivationGroup="Gobo1" Feature="Gobo.Gobo" Name="Gobo1" PhysicalUnit="None" Pretty="G1"/>
+        <Attribute ActivationGroup="Prism" Feature="Beam.Beam" Name="Prism1" PhysicalUnit="None" Pretty="Prism1"/>
+        <Attribute Feature="Beam.Beam" Name="Prism1Pos" PhysicalUnit="Angle" Pretty="Prism1 Pos"/>
+        <Attribute ActivationGroup="Prism" Feature="Beam.Beam" Name="Prism2" PhysicalUnit="None" Pretty="Prism2"/>
+        <Attribute Feature="Beam.Beam" Name="Prism2Pos" PhysicalUnit="Angle" Pretty="Prism2 Pos"/>
+        <Attribute Feature="Focus.Focus" Name="Focus1" PhysicalUnit="None" Pretty="Focus1"/>
+        <Attribute Feature="Beam.Beam" Name="Frost1" PhysicalUnit="None" Pretty="Frost1"/>
+        <Attribute Feature="Beam.Beam" Name="Shutter1" PhysicalUnit="None" Pretty="Sh1"/>
+        <Attribute Feature="Dimmer.Dimmer" Name="Dimmer" PhysicalUnit="LuminousIntensity" Pretty="Dim"/>
+        <Attribute Feature="Control.Control" Name="LampControl" PhysicalUnit="None" Pretty="Lamp Ctrl"/>
+        <Attribute Feature="Control.Control" Name="Function" PhysicalUnit="None" Pretty="Function"/>
+        <Attribute ActivationGroup="Gobo1" Feature="Gobo.Gobo" MainAttribute="Gobo1" Name="Gobo1SelectSpin" PhysicalUnit="AngularSpeed" Pretty="Select Spin"/>
+        <Attribute ActivationGroup="Gobo1" Feature="Gobo.Gobo" MainAttribute="Gobo1" Name="Gobo1SelectShake" PhysicalUnit="Frequency" Pretty="Select Shake"/>
+        <Attribute ActivationGroup="Prism" Feature="Beam.Beam" MainAttribute="Prism1Pos" Name="Prism1PosRotate" PhysicalUnit="AngularSpeed" Pretty="Rotate1"/>
+        <Attribute ActivationGroup="Prism" Feature="Beam.Beam" MainAttribute="Prism2Pos" Name="Prism2PosRotate" PhysicalUnit="AngularSpeed" Pretty="Rotate2"/>
+        <Attribute Feature="Beam.Beam" MainAttribute="Shutter1" Name="Shutter1Strobe" PhysicalUnit="Frequency" Pretty="Strobe1"/>
+        <Attribute Feature="Beam.Beam" MainAttribute="Shutter1" Name="Shutter1StrobePulseOpen" PhysicalUnit="Frequency" Pretty="Pulse Open1"/>
+        <Attribute Feature="Beam.Beam" MainAttribute="Shutter1" Name="Shutter1StrobePulseClose" PhysicalUnit="Frequency" Pretty="Pulse Close1"/>
+        <Attribute Feature="Beam.Beam" MainAttribute="Shutter1" Name="Shutter1StrobePulse" PhysicalUnit="Frequency" Pretty="Pulse1"/>
+        <Attribute Feature="Beam.Beam" MainAttribute="Shutter1" Name="Shutter1StrobeRandom" PhysicalUnit="Frequency" Pretty="Random1"/>
+        <Attribute Color="0.312700,0.329000,100.000000" Feature="Dimmer.Dimmer" Name="PT Speed" PhysicalUnit="None" Pretty=""/>
+        <Attribute ActivationGroup="ColorRGB" Feature="Color.Color" Name="Color1" PhysicalUnit="None" Pretty="C1"/>
+        <Attribute ActivationGroup="ColorRGB" Feature="Color.Color" MainAttribute="Color1" Name="Color1WheelSpin" PhysicalUnit="AngularSpeed" Pretty="Wheel Spin"/>
+        <Attribute ActivationGroup="ColorRGB" Feature="Color.Color" MainAttribute="Color1" Name="Color1WheelIndex" PhysicalUnit="Angle" Pretty="Wheel Index"/>
+        <Attribute Feature="Control.Control" Name="BeamReset" PhysicalUnit="None" Pretty="Beam Reset"/>
+        <Attribute Feature="Control.Control" Name="PositionReset" PhysicalUnit="None" Pretty="Pos Reset"/>
+        <Attribute Feature="Control.Control" Name="FixtureCalibrationReset" PhysicalUnit="None" Pretty="Fixture Calibration Reset"/>
+        <Attribute Feature="Control.Control" Name="NoFeature" PhysicalUnit="None" Pretty="NoFeature"/>
+      </Attributes>
+    </AttributeDefinitions>
+    <Wheels>
+      <Wheel Name="Color1">
+        <Slot Color="0.312700,0.329000,100.000000" Name="Open"/>
+        <Slot Color="0.660400,0.331500,71.250000" Name="Color 1"/>
+        <Slot Color="0.530600,0.390100,77.750000" Name="Color 2"/>
+        <Slot Color="0.219400,0.343400,87.750000" Name="Color 3"/>
+        <Slot Color="0.303800,0.630300,39.000000" Name="Color 4"/>
+        <Slot Color="0.361900,0.513400,75.500000" Name="Color 5"/>
+        <Slot Color="0.249400,0.232900,64.250000" Name="Color 6"/>
+        <Slot Color="0.260600,0.164900,77.250000" Name="Color 7"/>
+        <Slot Color="0.474400,0.521900,67.750000" Name="Color 8"/>
+        <Slot Color="0.234400,0.101100,61.250000" Name="Color 9"/>
+        <Slot Color="0.155600,0.079890,83.250000" Name="Color 10"/>
+        <Slot Color="0.395600,0.436900,57.250000" Name="Color 11"/>
+        <Slot Color="0.350600,0.385900,88.750000" Name="Color 12"/>
+        <Slot Color="0.301900,0.313600,100.000000" Name="Color 13"/>
+        <Slot Color="0.151900,0.050140,10.250000" Name="Color 14"/>
+      </Wheel>
+      <Wheel Name="Gobo1">
+        <Slot Color="0.312700,0.329000,100.000000" Name="Open"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="201906022" Name="Gobo 1"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="201906023(1)" Name="Gobo 2"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="201906024" Name="Gobo 3"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="201906025(1)" Name="Gobo 4"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="20191031-2" Name="Gobo 5"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="20191031-1" Name="Gobo 6"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="20191006-1" Name="Gobo 7"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="2019060514" Name="Gobo 8"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="20190919-1(1)" Name="Gobo 9"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="2019060512" Name="Gobo 10"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="20190919-3" Name="Gobo 11"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="20190919-5(1)" Name="Gobo 12"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="122" Name="Gobo 13"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="201906059(1)" Name="Gobo 14"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="201906058(1)" Name="Gobo 15"/>
+        <Slot Color="0.312700,0.329000,100.000000" MediaFileName="20190919-8" Name="Gobo 16"/>
+      </Wheel>
+    </Wheels>
+    <PhysicalDescriptions>
+      <ColorSpace Mode="sRGB"/>
+      <Filters/>
+      <Emitters/>
+      <DMXProfiles/>
+      <CRIs/>
+    </PhysicalDescriptions>
+    <Models>
+      <Model File="" Height="0.120000" Length="0.250000" Name="Base" PrimitiveType="Base" Width="0.310000"/>
+      <Model File="" Height="0.320000" Length="0.380000" Name="Yoke" PrimitiveType="Yoke" Width="0.120000"/>
+      <Model File="" Height="0.360000" Length="0.240000" Name="Head" PrimitiveType="Head" Width="0.220000"/>
+      <Model File="" Height="0.020000" Length="0.090000" Name="Beam" PrimitiveType="Cylinder" Width="0.090000"/>
+      <Model File="XP-380 BEAM" Height="1.000000" Length="1.000000" Name="Geometry 1" PrimitiveType="Undefined" Width="1.000000"/>
+    </Models>
+    <Geometries>
+      <Geometry Model="Base" Name="Base" Position="{1.000000,0.000000,0.000000,0.000000}{0.000000,1.000000,0.000000,0.000000}{0.000000,0.000000,1.000000,0.000000}{0,0,0,1}">
+        <Axis Model="Yoke" Name="Yoke" Position="{1.000000,0.000000,0.000000,0.000000}{0.000000,1.000000,0.000000,0.000000}{0.000000,0.000000,1.000000,-0.220000}{0,0,0,1}">
+          <Axis Model="Head" Name="Head" Position="{1.000000,0.000000,0.000000,0.000000}{0.000000,1.000000,0.000000,0.000000}{0.000000,0.000000,1.000000,-0.110064}{0,0,0,1}">
+            <Beam BeamAngle="1.000000" BeamRadius="0.040000" BeamType="Spot" ColorRenderingIndex="80" ColorTemperature="8000.000000" FieldAngle="1.000000" LampType="LED" LuminousFlux="10000.000000" Model="Beam" Name="Beam" Position="{1.000000,0.000000,0.000000,0.000000}{0.000000,1.000000,0.000000,0.000000}{0.000000,0.000000,1.000000,-0.168532}{0,0,0,1}" PowerConsumption="330.000000"/>
+          </Axis>
+        </Axis>
+      </Geometry>
+    </Geometries>
+    <DMXModes>
+      <DMXMode Geometry="Base" Name="Mode 2 17 DMX">
+        <DMXChannels>
+          <DMXChannel DMXBreak="1" Default="32896/2" Geometry="Yoke" Highlight="None" Offset="1,2">
+            <LogicalChannel Attribute="Pan" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Pan" DMXFrom="0/2" Name="Pan 1" OriginalAttribute="" PhysicalFrom="270.000000" PhysicalTo="-270.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/2" Name="Min" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="1/2" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="32896/2" Name="Center" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="32897/2" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="65535/2" Name="Max" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="32896/2" Geometry="Head" Highlight="None" Offset="3,4">
+            <LogicalChannel Attribute="Tilt" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Tilt" DMXFrom="0/2" Name="Tilt 1" OriginalAttribute="" PhysicalFrom="-135.000000" PhysicalTo="135.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/2" Name="Min" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="1/2" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="32896/2" Name="Center" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="32897/2" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="65535/2" Name="Max" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="None" Offset="5">
+            <LogicalChannel Attribute="PT Speed" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="PT Speed" DMXFrom="0/1" Name="PT Speed 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000"/>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="0/1" Offset="6">
+            <LogicalChannel Attribute="Color1" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Color1" DMXFrom="0/1" Name="Color1 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="0.000000" RealFade="0.000000" Wheel="Color1">
+                <ChannelSet DMXFrom="0/1" Name="Open" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="1"/>
+                <ChannelSet DMXFrom="4/1" Name="Color 1" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="2"/>
+                <ChannelSet DMXFrom="8/1" Name="Color 2" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="3"/>
+                <ChannelSet DMXFrom="12/1" Name="Color 3" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="4"/>
+                <ChannelSet DMXFrom="16/1" Name="Color 4" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="5"/>
+                <ChannelSet DMXFrom="20/1" Name="Color 5" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="6"/>
+                <ChannelSet DMXFrom="24/1" Name="Color 6" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="7"/>
+                <ChannelSet DMXFrom="28/1" Name="Color 7" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="8"/>
+                <ChannelSet DMXFrom="32/1" Name="Color 8" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="9"/>
+                <ChannelSet DMXFrom="36/1" Name="Color 9" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="10"/>
+                <ChannelSet DMXFrom="40/1" Name="Color 10" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="11"/>
+                <ChannelSet DMXFrom="44/1" Name="Color 11" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="12"/>
+                <ChannelSet DMXFrom="48/1" Name="Color 12" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="13"/>
+                <ChannelSet DMXFrom="52/1" Name="Color 13" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="14"/>
+                <ChannelSet DMXFrom="56/1" Name="Color 14" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="15"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Color1WheelIndex" DMXFrom="60/1" Name="Color Index" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="360.000000" RealFade="0.000000" Wheel="Color1">
+                <ChannelSet DMXFrom="60/1" Name="Color Index" PhysicalFrom="0.000000" PhysicalTo="360.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Color1WheelSpin" DMXFrom="128/1" Name="Color Spin" OriginalAttribute="" PhysicalFrom="60.000000" PhysicalTo="-60.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="128/1" Name="max CCW" PhysicalFrom="60.000000" PhysicalTo="60.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="129/1" Name="CCW" PhysicalFrom="59.000000" PhysicalTo="1.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="190/1" Name="Stop" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="194/1" Name="CW" PhysicalFrom="-1.000000" PhysicalTo="-59.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="max CW" PhysicalFrom="-60.000000" PhysicalTo="-60.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="0/1" Offset="7">
+            <LogicalChannel Attribute="Gobo1" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Gobo1" DMXFrom="0/1" Name="Gobo1 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="0.000000" RealFade="0.000000" Wheel="Gobo1">
+                <ChannelSet DMXFrom="0/1" Name="Open" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="1"/>
+                <ChannelSet DMXFrom="8/1" Name="Gobo 1" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="2"/>
+                <ChannelSet DMXFrom="11/1" Name="Gobo 2" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="3"/>
+                <ChannelSet DMXFrom="14/1" Name="Gobo 3" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="4"/>
+                <ChannelSet DMXFrom="17/1" Name="Gobo 4" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="5"/>
+                <ChannelSet DMXFrom="20/1" Name="Gobo 5" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="6"/>
+                <ChannelSet DMXFrom="23/1" Name="Gobo 6" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="7"/>
+                <ChannelSet DMXFrom="26/1" Name="Gobo 7" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="8"/>
+                <ChannelSet DMXFrom="29/1" Name="Gobo 8" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="9"/>
+                <ChannelSet DMXFrom="32/1" Name="Gobo 9" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="10"/>
+                <ChannelSet DMXFrom="35/1" Name="Gobo 10" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="11"/>
+                <ChannelSet DMXFrom="38/1" Name="Gobo 11" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="12"/>
+                <ChannelSet DMXFrom="41/1" Name="Gobo 12" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="13"/>
+                <ChannelSet DMXFrom="44/1" Name="Gobo 13" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="14"/>
+                <ChannelSet DMXFrom="47/1" Name="Gobo 14" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="15"/>
+                <ChannelSet DMXFrom="50/1" Name="Gobo 15" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="16"/>
+                <ChannelSet DMXFrom="53/1" Name="Gobo 16" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="17"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Gobo1SelectShake" DMXFrom="56/1" Name="Gobo 1 Shake" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="0.000000" RealFade="0.000000" Wheel="Gobo1">
+                <ChannelSet DMXFrom="56/1" Name="Open Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="1"/>
+                <ChannelSet DMXFrom="60/1" Name="Gobo 1 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="2"/>
+                <ChannelSet DMXFrom="64/1" Name="Gobo 2 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="3"/>
+                <ChannelSet DMXFrom="68/1" Name="Gobo 3 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="4"/>
+                <ChannelSet DMXFrom="72/1" Name="Gobo 4 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="5"/>
+                <ChannelSet DMXFrom="76/1" Name="Gobo 5 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="6"/>
+                <ChannelSet DMXFrom="80/1" Name="Gobo 6 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="7"/>
+                <ChannelSet DMXFrom="84/1" Name="Gobo 7 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="8"/>
+                <ChannelSet DMXFrom="88/1" Name="Gobo 8 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="9"/>
+                <ChannelSet DMXFrom="92/1" Name="Gobo 9 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="10"/>
+                <ChannelSet DMXFrom="96/1" Name="Gobo 10 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="11"/>
+                <ChannelSet DMXFrom="100/1" Name="Gobo 11 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="12"/>
+                <ChannelSet DMXFrom="104/1" Name="Gobo 12 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="13"/>
+                <ChannelSet DMXFrom="108/1" Name="Gobo 13 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="14"/>
+                <ChannelSet DMXFrom="112/1" Name="Gobo 14 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="15"/>
+                <ChannelSet DMXFrom="116/1" Name="Gobo 15 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="16"/>
+                <ChannelSet DMXFrom="120/1" Name="Gobo 16 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="17"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Gobo1SelectSpin" DMXFrom="128/1" Name="Gobo 1 Spin 1" OriginalAttribute="" PhysicalFrom="60.000000" PhysicalTo="-60.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="128/1" Name="max CCW" PhysicalFrom="60.000000" PhysicalTo="60.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="129/1" Name="CCW" PhysicalFrom="59.000000" PhysicalTo="1.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="190/1" Name="Stop" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="194/1" Name="CW" PhysicalFrom="-1.000000" PhysicalTo="-59.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="max CW" PhysicalFrom="-60.000000" PhysicalTo="-60.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="0/1" Offset="8">
+            <LogicalChannel Attribute="Prism1" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Prism1" DMXFrom="0/1" Name="Open" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="0.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Open" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Prism1" DMXFrom="8/1" Name="Prism 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="8/1" Name="Prism 1" PhysicalFrom="1.000000" PhysicalTo="1.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="0/1" Offset="9">
+            <LogicalChannel Attribute="Prism1Pos" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Prism1Pos" DMXFrom="0/1" Name="Prism1Pos 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Open" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="1/1" Name="Prism1Index" PhysicalFrom="0.000000" PhysicalTo="360.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Prism1PosRotate" DMXFrom="128/1" Name="Prism 1 Rot" OriginalAttribute="" PhysicalFrom="-50.000000" PhysicalTo="50.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="128/1" Name="max CCW" PhysicalFrom="-50.000000" PhysicalTo="-50.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="129/1" Name="CCW" PhysicalFrom="-49.000000" PhysicalTo="-1.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="191/1" Name="Stop" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="193/1" Name="CW" PhysicalFrom="1.000000" PhysicalTo="49.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="max CW" PhysicalFrom="50.000000" PhysicalTo="50.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="0/1" Offset="10">
+            <LogicalChannel Attribute="Prism2" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Prism2" DMXFrom="0/1" Name="Open" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Open" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Prism2" DMXFrom="8/1" Name="Prism2 " OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="8/1" Name="Prism2 " PhysicalFrom="1.000000" PhysicalTo="1.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="0/1" Offset="11">
+            <LogicalChannel Attribute="Prism2Pos" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Prism2Pos" DMXFrom="0/1" Name="Prism2Pos 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="360.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Open" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="1/1" Name="Prism2 Index" PhysicalFrom="0.000000" PhysicalTo="360.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Prism2PosRotate" DMXFrom="128/1" Name="Prism2 Rot" OriginalAttribute="" PhysicalFrom="-50.000000" PhysicalTo="50.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="128/1" Name="max CCW" PhysicalFrom="-50.000000" PhysicalTo="-50.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="129/1" Name="CCW" PhysicalFrom="-49.000000" PhysicalTo="-1.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="191/1" Name="Stop" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="193/1" Name="CW" PhysicalFrom="1.000000" PhysicalTo="49.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="max CW" PhysicalFrom="50.000000" PhysicalTo="50.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="10/1" Geometry="Head" Highlight="10/1" Offset="12">
+            <LogicalChannel Attribute="Shutter1" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Shutter1" DMXFrom="0/1" Name="Shutter1 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Off" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="8/1" Name="Open" PhysicalFrom="1.000000" PhysicalTo="1.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Shutter1Strobe" DMXFrom="16/1" Name="Strobe" OriginalAttribute="" PhysicalFrom="0.900000" PhysicalTo="12.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="16/1" Name="min Strobe" PhysicalFrom="0.900000" PhysicalTo="11.900000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="131/1" Name="max Strobe" PhysicalFrom="12.000000" PhysicalTo="12.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Shutter1StrobePulseOpen" DMXFrom="132/1" Name="Pulse Close" OriginalAttribute="" PhysicalFrom="0.900000" PhysicalTo="5.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="132/1" Name="Pulse Close" PhysicalFrom="0.900000" PhysicalTo="4.900000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="167/1" Name="max Pulse Close" PhysicalFrom="5.000000" PhysicalTo="5.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Shutter1StrobePulseClose" DMXFrom="168/1" Name="Pulse Open" OriginalAttribute="" PhysicalFrom="0.900000" PhysicalTo="5.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="168/1" Name="Pulse Open" PhysicalFrom="0.900000" PhysicalTo="4.900000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="169/1" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="203/1" Name="max Pulse Open" PhysicalFrom="5.000000" PhysicalTo="5.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Shutter1StrobePulse" DMXFrom="204/1" Name="Pulse" OriginalAttribute="" PhysicalFrom="0.900000" PhysicalTo="5.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="204/1" Name="min Pulse" PhysicalFrom="0.900000" PhysicalTo="4.900000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="239/1" Name="max Pulse" PhysicalFrom="5.000000" PhysicalTo="5.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Shutter1StrobeRandom" DMXFrom="240/1" Name="Strobe Ran" OriginalAttribute="" PhysicalFrom="10.000000" PhysicalTo="12.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="240/1" Name="Strobe Rnd" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Shutter1" DMXFrom="248/1" Name="Open2" OriginalAttribute="" PhysicalFrom="1.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="248/1" Name="Open2" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="255/1" Offset="13">
+            <LogicalChannel Attribute="Dimmer" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Dimmer" DMXFrom="0/1" Name="Dimmer 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Closed" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="1/1" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="Open" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="14418/2" Geometry="Head" Highlight="None" Offset="14,15">
+            <LogicalChannel Attribute="Focus1" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Focus1" DMXFrom="0/2" Name="Focus1 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/2" Name="Distant" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="256/2" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="65280/2" Name="Near" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="None" Offset="16">
+            <LogicalChannel Attribute="Frost1" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Frost1" DMXFrom="0/1" Name="Frost1 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="min Frost" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="1/1" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="max Frost" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="None" Offset="17">
+            <LogicalChannel Attribute="LampControl" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Function" DMXFrom="0/1" Name="Control " OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="NoFeature 1" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="70/1" Name="BO PT" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="80/1" Name="NO BO PT" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="90/1" Name="BO Color" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="100/1" Name="NO BO Color" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="110/1" Name="BO Gobo" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="120/1" Name="NO BO Gobo" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="LampControl" DMXFrom="130/1" Name="LAMP ON" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="130/1" Name="LAMP ON" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="PositionReset" DMXFrom="140/1" Name="PT Reset" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="140/1" Name="PT Reset" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="BeamReset" DMXFrom="150/1" Name="Eff Reset " OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="150/1" Name="Eff Reset " WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="NoFeature" DMXFrom="160/1" Name="NoFeature 2" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="160/1" Name="NoFeature 2" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="FixtureCalibrationReset" DMXFrom="200/1" Name="All Reset" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="200/1" Name="All Reset" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="NoFeature" DMXFrom="210/1" Name="NoFeature 3" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="210/1" Name="NoFeature 3" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="LampControl" DMXFrom="230/1" Name="LAMP OFF" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="230/1" Name="LAMP OFF" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="NoFeature" DMXFrom="240/1" Name="NoFeature 4" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="240/1" Name="NoFeature 4" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+        </DMXChannels>
+        <Relations/>
+      </DMXMode>
+      <DMXMode Geometry="Base" Name="Mode 1 14 DMX">
+        <DMXChannels>
+          <DMXChannel DMXBreak="1" Default="128/1" Geometry="Yoke" Highlight="None" Offset="1">
+            <LogicalChannel Attribute="Pan" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Pan" DMXFrom="0/1" Name="Pan 1" OriginalAttribute="" PhysicalFrom="270.000000" PhysicalTo="-270.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Min" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="1/1" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="128/1" Name="Center" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="129/1" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="Max" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="128/1" Geometry="Head" Highlight="None" Offset="2">
+            <LogicalChannel Attribute="Tilt" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Tilt" DMXFrom="0/1" Name="Tilt 1" OriginalAttribute="" PhysicalFrom="-135.000000" PhysicalTo="135.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Min" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="1/1" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="128/1" Name="Center" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="129/1" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="Max" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="None" Offset="3">
+            <LogicalChannel Attribute="PT Speed" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="PT Speed" DMXFrom="0/1" Name="PT Speed 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000"/>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="0/1" Offset="4">
+            <LogicalChannel Attribute="Color1" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Color1" DMXFrom="0/1" Name="Color1 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="0.000000" RealFade="0.000000" Wheel="Color1">
+                <ChannelSet DMXFrom="0/1" Name="Open" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="1"/>
+                <ChannelSet DMXFrom="4/1" Name="Color 1" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="2"/>
+                <ChannelSet DMXFrom="8/1" Name="Color 2" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="3"/>
+                <ChannelSet DMXFrom="12/1" Name="Color 3" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="4"/>
+                <ChannelSet DMXFrom="16/1" Name="Color 4" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="5"/>
+                <ChannelSet DMXFrom="20/1" Name="Color 5" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="6"/>
+                <ChannelSet DMXFrom="24/1" Name="Color 6" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="7"/>
+                <ChannelSet DMXFrom="28/1" Name="Color 7" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="8"/>
+                <ChannelSet DMXFrom="32/1" Name="Color 8" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="9"/>
+                <ChannelSet DMXFrom="36/1" Name="Color 9" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="10"/>
+                <ChannelSet DMXFrom="40/1" Name="Color 10" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="11"/>
+                <ChannelSet DMXFrom="44/1" Name="Color 11" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="12"/>
+                <ChannelSet DMXFrom="48/1" Name="Color 12" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="13"/>
+                <ChannelSet DMXFrom="52/1" Name="Color 13" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="14"/>
+                <ChannelSet DMXFrom="56/1" Name="Color 14" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="15"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Color1WheelIndex" DMXFrom="60/1" Name="Color Index" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="360.000000" RealFade="0.000000" Wheel="Color1">
+                <ChannelSet DMXFrom="60/1" Name="Color Index" PhysicalFrom="0.000000" PhysicalTo="360.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Color1WheelSpin" DMXFrom="128/1" Name="Color Spin" OriginalAttribute="" PhysicalFrom="60.000000" PhysicalTo="-60.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="128/1" Name="max CCW" PhysicalFrom="60.000000" PhysicalTo="60.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="129/1" Name="CCW" PhysicalFrom="59.000000" PhysicalTo="1.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="190/1" Name="Stop" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="194/1" Name="CW" PhysicalFrom="-1.000000" PhysicalTo="-59.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="max CW" PhysicalFrom="-60.000000" PhysicalTo="-60.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="0/1" Offset="5">
+            <LogicalChannel Attribute="Gobo1" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Gobo1" DMXFrom="0/1" Name="Gobo1 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="0.000000" RealFade="0.000000" Wheel="Gobo1">
+                <ChannelSet DMXFrom="0/1" Name="Open" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="1"/>
+                <ChannelSet DMXFrom="8/1" Name="Gobo 1" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="2"/>
+                <ChannelSet DMXFrom="11/1" Name="Gobo 2" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="3"/>
+                <ChannelSet DMXFrom="14/1" Name="Gobo 3" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="4"/>
+                <ChannelSet DMXFrom="17/1" Name="Gobo 4" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="5"/>
+                <ChannelSet DMXFrom="20/1" Name="Gobo 5" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="6"/>
+                <ChannelSet DMXFrom="23/1" Name="Gobo 6" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="7"/>
+                <ChannelSet DMXFrom="26/1" Name="Gobo 7" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="8"/>
+                <ChannelSet DMXFrom="29/1" Name="Gobo 8" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="9"/>
+                <ChannelSet DMXFrom="32/1" Name="Gobo 9" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="10"/>
+                <ChannelSet DMXFrom="35/1" Name="Gobo 10" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="11"/>
+                <ChannelSet DMXFrom="38/1" Name="Gobo 11" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="12"/>
+                <ChannelSet DMXFrom="41/1" Name="Gobo 12" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="13"/>
+                <ChannelSet DMXFrom="44/1" Name="Gobo 13" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="14"/>
+                <ChannelSet DMXFrom="47/1" Name="Gobo 14" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="15"/>
+                <ChannelSet DMXFrom="50/1" Name="Gobo 15" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="16"/>
+                <ChannelSet DMXFrom="53/1" Name="Gobo 16" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="17"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Gobo1SelectShake" DMXFrom="56/1" Name="Gobo 1 Shake" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="0.000000" RealFade="0.000000" Wheel="Gobo1">
+                <ChannelSet DMXFrom="56/1" Name="Open Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="1"/>
+                <ChannelSet DMXFrom="60/1" Name="Gobo 1 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="2"/>
+                <ChannelSet DMXFrom="64/1" Name="Gobo 2 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="3"/>
+                <ChannelSet DMXFrom="68/1" Name="Gobo 3 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="4"/>
+                <ChannelSet DMXFrom="72/1" Name="Gobo 4 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="5"/>
+                <ChannelSet DMXFrom="76/1" Name="Gobo 5 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="6"/>
+                <ChannelSet DMXFrom="80/1" Name="Gobo 6 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="7"/>
+                <ChannelSet DMXFrom="84/1" Name="Gobo 7 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="8"/>
+                <ChannelSet DMXFrom="88/1" Name="Gobo 8 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="9"/>
+                <ChannelSet DMXFrom="92/1" Name="Gobo 9 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="10"/>
+                <ChannelSet DMXFrom="96/1" Name="Gobo 10 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="11"/>
+                <ChannelSet DMXFrom="100/1" Name="Gobo 11 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="12"/>
+                <ChannelSet DMXFrom="104/1" Name="Gobo 12 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="13"/>
+                <ChannelSet DMXFrom="108/1" Name="Gobo 13 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="14"/>
+                <ChannelSet DMXFrom="112/1" Name="Gobo 14 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="15"/>
+                <ChannelSet DMXFrom="116/1" Name="Gobo 15 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="16"/>
+                <ChannelSet DMXFrom="120/1" Name="Gobo 16 Shake" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="17"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Gobo1SelectSpin" DMXFrom="128/1" Name="Gobo 1 Spin 1" OriginalAttribute="" PhysicalFrom="60.000000" PhysicalTo="-60.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="128/1" Name="max CCW" PhysicalFrom="60.000000" PhysicalTo="60.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="129/1" Name="CCW" PhysicalFrom="59.000000" PhysicalTo="1.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="190/1" Name="Stop" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="194/1" Name="CW" PhysicalFrom="-1.000000" PhysicalTo="-59.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="max CW" PhysicalFrom="-60.000000" PhysicalTo="-60.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="0/1" Offset="6">
+            <LogicalChannel Attribute="Prism1" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Prism1" DMXFrom="0/1" Name="Open" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="0.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Open" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Prism1" DMXFrom="8/1" Name="Prism 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="8/1" Name="Prism 1" PhysicalFrom="1.000000" PhysicalTo="1.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="0/1" Offset="7">
+            <LogicalChannel Attribute="Prism1Pos" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Prism1Pos" DMXFrom="0/1" Name="Prism1Pos 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Open" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="1/1" Name="Prism1Index" PhysicalFrom="0.000000" PhysicalTo="360.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Prism1PosRotate" DMXFrom="128/1" Name="Prism 1 Rot" OriginalAttribute="" PhysicalFrom="-50.000000" PhysicalTo="50.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="128/1" Name="max CCW" PhysicalFrom="-50.000000" PhysicalTo="-50.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="129/1" Name="CCW" PhysicalFrom="-49.000000" PhysicalTo="-1.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="191/1" Name="Stop" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="193/1" Name="CW" PhysicalFrom="1.000000" PhysicalTo="49.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="max CW" PhysicalFrom="50.000000" PhysicalTo="50.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="0/1" Offset="8">
+            <LogicalChannel Attribute="Prism2" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Prism2" DMXFrom="0/1" Name="Open" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Open" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Prism2" DMXFrom="8/1" Name="Prism2 " OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="8/1" Name="Prism2 " PhysicalFrom="1.000000" PhysicalTo="1.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="0/1" Offset="9">
+            <LogicalChannel Attribute="Prism2Pos" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Prism2Pos" DMXFrom="0/1" Name="Prism2Pos 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="360.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Open" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="1/1" Name="Prism2 Index" PhysicalFrom="0.000000" PhysicalTo="360.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Prism2PosRotate" DMXFrom="128/1" Name="Prism2 Rot" OriginalAttribute="" PhysicalFrom="-50.000000" PhysicalTo="50.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="128/1" Name="max CCW" PhysicalFrom="-50.000000" PhysicalTo="-50.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="129/1" Name="CCW" PhysicalFrom="-49.000000" PhysicalTo="-1.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="191/1" Name="Stop" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="193/1" Name="CW" PhysicalFrom="1.000000" PhysicalTo="49.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="max CW" PhysicalFrom="50.000000" PhysicalTo="50.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="10/1" Geometry="Head" Highlight="10/1" Offset="10">
+            <LogicalChannel Attribute="Shutter1" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Shutter1" DMXFrom="0/1" Name="Shutter1 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Off" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="8/1" Name="Open" PhysicalFrom="1.000000" PhysicalTo="1.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Shutter1Strobe" DMXFrom="16/1" Name="Strobe" OriginalAttribute="" PhysicalFrom="0.900000" PhysicalTo="12.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="16/1" Name="min Strobe" PhysicalFrom="0.900000" PhysicalTo="11.900000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="131/1" Name="max Strobe" PhysicalFrom="12.000000" PhysicalTo="12.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Shutter1StrobePulseOpen" DMXFrom="132/1" Name="Pulse Close" OriginalAttribute="" PhysicalFrom="0.900000" PhysicalTo="5.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="132/1" Name="Pulse Close" PhysicalFrom="0.900000" PhysicalTo="4.900000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="167/1" Name="max Pulse Close" PhysicalFrom="5.000000" PhysicalTo="5.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Shutter1StrobePulseClose" DMXFrom="168/1" Name="Pulse Open" OriginalAttribute="" PhysicalFrom="0.900000" PhysicalTo="5.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="168/1" Name="Pulse Open" PhysicalFrom="0.900000" PhysicalTo="4.900000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="169/1" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="203/1" Name="max Pulse Open" PhysicalFrom="5.000000" PhysicalTo="5.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Shutter1StrobePulse" DMXFrom="204/1" Name="Pulse" OriginalAttribute="" PhysicalFrom="0.900000" PhysicalTo="5.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="204/1" Name="min Pulse" PhysicalFrom="0.900000" PhysicalTo="4.900000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="239/1" Name="max Pulse" PhysicalFrom="5.000000" PhysicalTo="5.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Shutter1StrobeRandom" DMXFrom="240/1" Name="Strobe Ran" OriginalAttribute="" PhysicalFrom="10.000000" PhysicalTo="12.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="240/1" Name="Strobe Rnd" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="Shutter1" DMXFrom="248/1" Name="Open2" OriginalAttribute="" PhysicalFrom="1.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="248/1" Name="Open2" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="255/1" Offset="11">
+            <LogicalChannel Attribute="Dimmer" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Dimmer" DMXFrom="0/1" Name="Dimmer 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Closed" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="1/1" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="Open" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="56/1" Geometry="Head" Highlight="None" Offset="12">
+            <LogicalChannel Attribute="Focus1" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Focus1" DMXFrom="0/1" Name="Focus1 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="Distant" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="1/1" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="Near" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="None" Offset="13">
+            <LogicalChannel Attribute="Frost1" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Frost1" DMXFrom="0/1" Name="Frost1 1" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="min Frost" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="1/1" Name="" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="255/1" Name="max Frost" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+          <DMXChannel DMXBreak="1" Default="0/1" Geometry="Head" Highlight="None" Offset="14">
+            <LogicalChannel Attribute="LampControl" DMXChangeTimeLimit="0.000000" Master="None" MibFade="0.000000" Snap="No">
+              <ChannelFunction Attribute="Function" DMXFrom="0/1" Name="Control " OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="0/1" Name="NoFeature 1" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="70/1" Name="BO PT" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="80/1" Name="NO BO PT" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="90/1" Name="BO Color" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="100/1" Name="NO BO Color" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="110/1" Name="BO Gobo" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+                <ChannelSet DMXFrom="120/1" Name="NO BO Gobo" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="LampControl" DMXFrom="130/1" Name="LAMP ON" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="130/1" Name="LAMP ON" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="PositionReset" DMXFrom="140/1" Name="PT Reset" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="140/1" Name="PT Reset" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="BeamReset" DMXFrom="150/1" Name="Eff Reset " OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="150/1" Name="Eff Reset " WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="NoFeature" DMXFrom="160/1" Name="NoFeature 2" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="160/1" Name="NoFeature 2" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="FixtureCalibrationReset" DMXFrom="200/1" Name="All Reset" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="200/1" Name="All Reset" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="NoFeature" DMXFrom="210/1" Name="NoFeature 3" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="210/1" Name="NoFeature 3" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="LampControl" DMXFrom="230/1" Name="LAMP OFF" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="230/1" Name="LAMP OFF" PhysicalFrom="0.000000" PhysicalTo="0.000000" WheelSlotIndex="0"/>
+              </ChannelFunction>
+              <ChannelFunction Attribute="NoFeature" DMXFrom="240/1" Name="NoFeature 4" OriginalAttribute="" PhysicalFrom="0.000000" PhysicalTo="1.000000" RealFade="0.000000">
+                <ChannelSet DMXFrom="240/1" Name="NoFeature 4" WheelSlotIndex="0"/>
+              </ChannelFunction>
+            </LogicalChannel>
+          </DMXChannel>
+        </DMXChannels>
+        <Relations/>
+      </DMXMode>
+    </DMXModes>
+    <Revisions/>
+    <FTPresets/>
+    <FTMacros/>
+    <Protocols/>
+  </FixtureType>
+
+</GDTF>

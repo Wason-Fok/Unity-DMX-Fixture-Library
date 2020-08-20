@@ -1,0 +1,53 @@
+
+=== Mon Jul  6 10:52:41 2020
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 已添加:
+  com.unity.2d.tilemap@1.0.0
+  com.unity.collab-proxy@1.2.16
+  com.unity.ext.nunit@1.0.0
+  com.unity.test-framework@1.0.13
+  com.unity.timeline@1.1.0
+  com.unity.2d.sprite@1.0.0
+  com.unity.ide.vscode@1.1.2
+  com.unity.ide.rider@1.1.0
+  com.unity.ugui@1.0.0
+  com.unity.modules.androidjni@1.0.0
+  com.unity.multiplayer-hlapi@1.0.2
+  com.unity.xr.legacyinputhelpers@2.0.2
+The following packages were 已更新:
+  com.unity.analytics 从版本 2.0.16 到 3.3.2
+  com.unity.package-manager-ui 从版本 1.9.11 到 2.2.0
+  com.unity.purchasing 从版本 2.0.3 到 2.0.6
+  com.unity.textmeshpro 从版本 1.2.4 到 2.0.1
+
+=== Tue Aug 11 17:42:02 2020
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 已更新:
+  com.unity.ads 从版本 2.0.8 到 3.4.7
+  com.unity.analytics 从版本 3.3.2 到 3.3.5
+  com.unity.ide.rider 从版本 1.1.0 到 1.1.4
+  com.unity.ide.vscode 从版本 1.1.2 到 1.2.1
+  com.unity.multiplayer-hlapi 从版本 1.0.2 到 1.0.6
+  com.unity.test-framework 从版本 1.0.13 到 1.1.14
+  com.unity.timeline 从版本 1.1.0 到 1.2.6
+  com.unity.xr.legacyinputhelpers 从版本 2.0.2 到 2.1.4
+The following packages were 已移除:
+  com.unity.package-manager-ui@2.2.0
+
+=== Thu Aug 13 11:59:35 2020
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 已添加:
+  com.unity.ide.visualstudio@2.0.2
+The following packages were 已更新:
+  com.unity.collab-proxy 从版本 1.2.16 到 1.3.8
+  com.unity.ide.rider 从版本 1.1.4 到 1.2.1
+  com.unity.textmeshpro 从版本 2.1.1 到 3.0.1
